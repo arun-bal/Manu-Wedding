@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Wedding Invitation | Manu Maxim & Maneesha</title>
+  <title>Wedding Invitation | Manu Maxim &amp; Maneesha</title>
   
   <!-- WhatsApp & Social Media Sharing Preview Meta Tags -->
-  <meta property="og:title" content="💍 Wedding Invitation: Manu Maxim & Maneesha" />
-  <meta property="og:description" content="We joyfully invite you to celebrate our wedding on 21st November 2026 at Thimiri Bank Convention Centre, Cheruvathur. Tap to open our digital invitation!" />
+  <meta property="og:title" content="💍 Wedding Invitation: Manu Maxim &amp; Maneesha" />
+  <meta property="og:description" content="We joyfully invite you to celebrate our Wedding (21-Nov, Cheruvathur) & Reception (22-Nov, Vadakara). Tap to open our interactive digital invitation!" />
   <meta property="og:image" content="assets/images/couple-portrait.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:image:width" content="1200" />
@@ -15,14 +15,14 @@
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Wedding Invitation: Manu Maxim & Maneesha" />
-  <meta name="twitter:description" content="Saturday, 21st November 2026 • Thimiri Bank Convention Centre, Cheruvathur" />
+  <meta name="twitter:title" content="Wedding &amp; Reception: Manu Maxim &amp; Maneesha" />
+  <meta name="twitter:description" content="21-Nov-2026 (Cheruvathur) &amp; 22-Nov-2026 (Vadakara)" />
   <meta name="twitter:image" content="assets/images/couple-portrait.jpg" />
   
   <!-- Mobile Status Bar Styling -->
-  <meta name="theme-color" content="#160710" />
+  <meta name="theme-color" content="#faf8f5" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -38,20 +38,21 @@
   <div id="invitation-cover" class="cover-overlay">
     <div class="envelope-card">
       <p class="cover-traditional-shloka">॥ शुभ विवाह ॥</p>
+      <p class="cover-parents-note" data-bind="groom-parents">Mrs. Bindu T &amp; Mr. Rajan K.P</p>
+      
       <h2 class="cover-title">Wedding Invitation</h2>
-      <p class="cover-subtitle">You are cordially invited</p>
 
-      <div class="gold-divider">
-        <i class="fas fa-crown"></i>
+      <div class="floral-divider">
+        <i class="fas fa-seedling"></i>
       </div>
 
-      <h1 class="cover-names shimmer-text" data-bind="couple-combined">Manu Maxim & Maneesha</h1>
+      <h1 class="cover-names" data-bind="couple-combined">Manu Maxim &amp; Maneesha</h1>
       
       <div class="cover-date-pill">
-        <i class="far fa-calendar-alt"></i> <span data-bind="event-date-formatted">Saturday, 21st November 2026</span>
+        <i class="far fa-calendar-alt"></i> 21 &amp; 22 November 2026
       </div>
 
-      <!-- Interactive Royal Wax Seal Button -->
+      <!-- Royal Navy & Gold Wax Seal Button -->
       <div class="wax-seal-wrapper">
         <button id="open-invitation-btn" class="wax-seal-btn" aria-label="Tap to open invitation">
           <span class="wax-seal-monogram" data-bind="couple-monogram">M &amp; M</span>
@@ -85,34 +86,29 @@
     <!-- HERO SECTION -->
     <section class="hero-section">
       
-      <!-- Auspicious Shloka Box -->
-      <div class="auspicious-shloka-box scroll-reveal">
-        <p class="shloka-sanskrit" data-bind="shloka-text">माङ्गल्यं तन्तुनानेन लोकजीवनहेतुना । कण्ठे बध्नामि सुभगे सञ्जीव शरदः शतम् ॥</p>
-        <p class="shloka-translation" data-bind="shloka-meaning">With this sacred thread, the source of life and love, I tie our souls together in devotion. May we live together happily for a hundred years.</p>
-      </div>
+      <!-- Invitation Letter Layout Card -->
+      <div class="letter-header-card scroll-reveal">
+        <p class="parents-names-groom" data-bind="groom-parents">Mrs. Bindu T &amp; Mr. Rajan K.P</p>
+        <p class="parents-address-groom" data-bind="groom-address">Symphony, Mokeri, Kuttiady</p>
 
-      <div class="section-badge scroll-reveal">
-        <i class="fas fa-heart"></i> The Wedding Ceremony
-      </div>
+        <p class="letter-invite-text" data-bind="letter-intro">
+          With immense joy and happiness, we invite you to join us for the wedding ceremony and reception of our beloved son
+        </p>
 
-      <p class="hero-subtitle-welcome scroll-reveal" data-bind="welcome-header">Together with our families</p>
-      
-      <h1 class="hero-couple-title shimmer-text scroll-reveal" data-bind="couple-combined">
-        Manu Maxim &amp; Maneesha
-      </h1>
+        <h1 class="hero-couple-title" data-bind="groom-name">Manu Maxim</h1>
+        <span class="couple-title-amp">&amp;</span>
+        <h1 class="hero-couple-title" data-bind="bride-name">Maneesha</h1>
 
-      <p class="hero-date-highlight scroll-reveal">
-        <span data-bind="event-date-formatted">Saturday, 21st November 2026</span>
-      </p>
-
-      <div class="gold-divider scroll-reveal">
-        <i class="fas fa-gem"></i>
+        <div class="parents-bride-info">
+          <p class="parents-names-bride">D/O <span data-bind="bride-parents">Mrs. Pushpa K &amp; Mr. Narayanan K.K</span></p>
+          <p class="parents-address-bride" data-bind="bride-address">Sithara, Weavers Street, Nileshwar</p>
+        </div>
       </div>
 
       <!-- Hero Couple Portrait Frame -->
       <div class="hero-portrait-container scroll-reveal clickable-photo">
-        <img id="hero-couple-img" src="assets/images/couple-portrait.jpg" alt="Manu Maxim & Maneesha" class="hero-portrait-img" />
-        <div class="hero-portrait-tag">Forever Begins Here</div>
+        <img id="hero-couple-img" src="assets/images/couple-portrait.jpg" alt="Manu Maxim &amp; Maneesha" class="hero-portrait-img" />
+        <div class="hero-portrait-tag">Soulmates Forever</div>
       </div>
 
       <!-- Smooth Scroll Indicator -->
@@ -122,56 +118,91 @@
       </div>
     </section>
 
-    <!-- EMOTIONAL INVITATION MESSAGE -->
-    <section class="message-section scroll-reveal">
-      <div class="section-badge">
-        <i class="fas fa-envelope-open-text"></i> Warm Greetings
+    <!-- AUSPICIOUS SHLOKA & EMOTIONAL MESSAGE -->
+    <section class="scroll-reveal" style="text-align: center; margin: 40px 0;">
+      <div class="letter-header-card" style="padding: 28px 20px;">
+        <div class="section-badge">
+          <i class="fas fa-om"></i> Sacred Nuptials
+        </div>
+        <p style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--navy-primary); font-weight: 600; line-height: 1.7; margin-bottom: 8px;" data-bind="shloka-text">
+          माङ्गल्यं तन्तुनानेन लोकजीवनहेतुना । कण्ठे बध्नामि सुभगे सञ्जीव शरदः शतम् ॥
+        </p>
+        <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; line-height: 1.5; margin-bottom: 18px;" data-bind="shloka-meaning">
+          With this sacred thread, the source of life and love, I tie our souls together in devotion. May we live together happily for a hundred years.
+        </p>
+        <div class="floral-divider">
+          <i class="fas fa-heart" style="color:var(--blue-hydrangea);"></i>
+        </div>
+        <p style="font-size: 0.9rem; line-height: 1.7; color: var(--text-primary); font-style: italic;" data-bind="emotional-story">
+          From sweet conversations to heartfelt promises, our love story has blossomed into a lifelong bond. With immense joy in our hearts and gratitude for all who have shaped our lives, we invite you to be part of our most precious milestone.
+        </p>
       </div>
-      <h2 class="message-title" data-bind="sub-header">Cordially invite you to celebrate our union</h2>
-      <p class="message-text" data-bind="emotional-story">
-        From sweet conversations to heartfelt promises, our love story has blossomed into a lifelong bond. With immense joy in our hearts and gratitude for all who have shaped our lives, we invite you to be part of our most precious milestone. Your blessings and presence will make our celebration truly complete.
-      </p>
-      <div class="gold-divider">
-        <i class="fas fa-om"></i>
-      </div>
-      <p class="message-family-sign" data-bind="family-warmth">
-        Warmly invited by Maxim &amp; Family and all near and dear ones.
-      </p>
     </section>
 
-    <!-- SCRATCH-TO-REVEAL DATE & MUHURTHAM -->
+    <!-- SCRATCH-TO-REVEAL DUAL EVENTS (WEDDING & RECEPTION) -->
     <section class="scratch-section scroll-reveal">
       <div class="section-badge">
-        <i class="fas fa-wand-magic-sparkles"></i> Auspicious Date
+        <i class="fas fa-wand-magic-sparkles"></i> Auspicious Dates
       </div>
       <h2 class="story-title">Scratch to Reveal</h2>
       <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
-        Use your finger or cursor to gently scratch the gold foil card below
+        Gently scratch the gold foil card below with your finger or cursor to unveil both ceremonies
       </p>
 
       <div id="scratch-card-container" class="scratch-card-wrapper">
-        <!-- Interactive Canvas Scratch Layer -->
+        <!-- Canvas Scratch Layer -->
         <canvas id="scratch-canvas"></canvas>
 
-        <!-- Revealed Card Content -->
+        <!-- Revealed Dual Events Content -->
         <div id="scratch-revealed-content" class="scratch-revealed-card">
-          <div class="date-ornament-top"><i class="fas fa-star-and-crescent"></i></div>
-          <span class="revealed-day-title" data-bind="event-day">Saturday</span>
-          <div class="revealed-date-num" data-bind="event-date-number">21</div>
-          <div class="revealed-month-year" data-bind="event-month-year">November 2026</div>
+          <div class="dual-events-container">
+            
+            <!-- Event 1: Wedding -->
+            <div class="event-box highlight">
+              <span class="event-type-badge"><i class="fas fa-ring"></i> Wedding Ceremony</span>
+              <div class="event-day-row">
+                <span class="event-day-text">Saturday</span>
+                <span class="event-date-large">21</span>
+                <span class="event-month-text">Nov 2026</span>
+              </div>
+              <div class="event-time-pill">
+                <i class="far fa-clock"></i> 11:50 AM – 12:36 PM (Muhurtham)
+              </div>
+              <p class="event-venue-sub">Thimiri Bank Convention Centre, Cheruvathur</p>
+              
+              <div class="calendar-actions" style="margin-top: 10px;">
+                <a id="save-wedding-gcal-btn" href="#" target="_blank" class="btn-luxury btn-navy-solid" style="padding: 8px 16px; font-size: 0.78rem;">
+                  <i class="fab fa-google"></i> Add Wedding to G-Cal
+                </a>
+                <button id="save-wedding-ical-btn" class="btn-luxury btn-blue-outline" style="padding: 8px 14px; font-size: 0.78rem;">
+                  <i class="fas fa-calendar-plus"></i> Apple / iCal
+                </button>
+              </div>
+            </div>
 
-          <div class="muhurtham-badge">
-            <i class="fas fa-clock"></i>
-            <span>Muhurtham: <strong data-bind="muhurtham-time">11:50 AM – 12:36 PM</strong></span>
-          </div>
+            <!-- Event 2: Reception -->
+            <div class="event-box">
+              <span class="event-type-badge"><i class="fas fa-glass-cheers"></i> Wedding Reception</span>
+              <div class="event-day-row">
+                <span class="event-day-text">Sunday</span>
+                <span class="event-date-large">22</span>
+                <span class="event-month-text">Nov 2026</span>
+              </div>
+              <div class="event-time-pill" style="background: rgba(96, 143, 184, 0.15); color: var(--navy-primary);">
+                <i class="far fa-clock"></i> 4:30 PM – 08:30 PM (Reception)
+              </div>
+              <p class="event-venue-sub">Kalleri Auditorium, Vadakara</p>
 
-          <div class="calendar-actions" style="margin-top: 10px;">
-            <a id="save-gcal-btn" href="#" target="_blank" class="btn-luxury btn-gold-solid">
-              <i class="fab fa-google"></i> Google Calendar
-            </a>
-            <button id="save-ical-btn" class="btn-luxury btn-gold-outline">
-              <i class="fas fa-calendar-plus"></i> Apple / iCal
-            </button>
+              <div class="calendar-actions" style="margin-top: 10px;">
+                <a id="save-reception-gcal-btn" href="#" target="_blank" class="btn-luxury btn-navy-solid" style="padding: 8px 16px; font-size: 0.78rem;">
+                  <i class="fab fa-google"></i> Add Reception to G-Cal
+                </a>
+                <button id="save-reception-ical-btn" class="btn-luxury btn-blue-outline" style="padding: 8px 14px; font-size: 0.78rem;">
+                  <i class="fas fa-calendar-plus"></i> Apple / iCal
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -235,7 +266,7 @@
       </div>
       <h2 class="story-title">Programme &amp; Timings</h2>
       <p style="font-size: 0.85rem; color: var(--text-muted);">
-        Auspicious rituals and celebrations on 21-Nov-2026
+        Auspicious rituals and celebrations across both days
       </p>
 
       <div id="timeline-list" class="timeline-container">
@@ -258,117 +289,174 @@
       </div>
     </section>
 
-    <!-- VENUE & LOCATION SECTION -->
+    <!-- DUAL VENUE & LOCATION SECTION -->
     <section class="venue-section scroll-reveal">
       <div class="section-badge">
-        <i class="fas fa-map-location-dot"></i> Venue &amp; Directions
+        <i class="fas fa-map-location-dot"></i> Venues &amp; Directions
       </div>
-      
-      <div class="venue-card">
-        <div class="venue-icon-circle">
-          <i class="fas fa-hotel"></i>
-        </div>
+      <h2 class="story-title">Celebration Locations</h2>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">
+        Tap below for turn-by-turn navigation on Google Maps
+      </p>
 
-        <h3 class="venue-name-heading" data-bind="venue-name">Thimiri Bank Convention Centre</h3>
-        <p class="venue-city-sub" data-bind="venue-city">Cheruvathur</p>
+      <div class="venue-cards-grid">
         
-        <p class="venue-full-address" data-bind="venue-address">
-          Thimiri Bank Convention Centre, Cheruvathur, Kasaragod District, Kerala, India
-        </p>
-
-        <span class="venue-landmark-pill">
-          <i class="fas fa-location-dot"></i> <span data-bind="venue-landmark">Near Thimiri Service Co-operative Bank, Cheruvathur</span>
-        </span>
-
-        <div class="venue-actions">
-          <a data-bind-map-url href="https://share.google/yBmRznAAygHOGzNtF" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-gold-solid">
-            <i class="fas fa-map-marked-alt"></i> Open in Google Maps
-          </a>
+        <!-- Venue 1: Wedding -->
+        <div class="venue-card">
+          <span class="venue-event-badge"><i class="fas fa-ring"></i> Wedding Ceremony • 21-Nov-2026</span>
+          <div class="venue-icon-circle">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <h3 class="venue-name-heading">Thimiri Bank Convention Centre</h3>
+          <p class="venue-city-sub">Cheruvathur</p>
+          <p class="venue-full-address">
+            Thimiri Bank Convention Centre, Cheruvathur, Kasaragod District, Kerala, India
+          </p>
+          <span class="venue-landmark-pill">
+            <i class="fas fa-location-dot"></i> Near Thimiri Service Co-operative Bank, Cheruvathur
+          </span>
+          <div class="venue-actions">
+            <a id="wedding-map-btn" href="https://share.google/yBmRznAAygHOGzNtF" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-navy-solid">
+              <i class="fas fa-map-marked-alt"></i> Open Cheruvathur Venue on Maps
+            </a>
+          </div>
         </div>
 
-        <!-- Embedded Interactive Map -->
-        <div class="map-embed-wrapper">
-          <iframe id="venue-map-iframe" src="" title="Venue Google Map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Venue 2: Reception -->
+        <div class="venue-card">
+          <span class="venue-event-badge"><i class="fas fa-glass-cheers"></i> Wedding Reception • 22-Nov-2026</span>
+          <div class="venue-icon-circle" style="background: rgba(197, 155, 39, 0.12); border-color: var(--gold-primary);">
+            <i class="fas fa-champagne-glasses" style="color: var(--gold-primary);"></i>
+          </div>
+          <h3 class="venue-name-heading">Kalleri Auditorium</h3>
+          <p class="venue-city-sub">Vadakara</p>
+          <p class="venue-full-address">
+            Kalleri Auditorium, Vadakara, Kozhikode District, Kerala, India
+          </p>
+          <span class="venue-landmark-pill">
+            <i class="fas fa-location-dot"></i> Kalleri, Near Vadakara
+          </span>
+          <div class="venue-actions">
+            <a id="reception-map-btn" href="https://maps.google.com/?q=Kalleri+Auditorium+Vadakara" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-navy-solid">
+              <i class="fas fa-map-marked-alt"></i> Open Vadakara Venue on Maps
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
 
-    <!-- RSVP & BLESSINGS WALL -->
-    <section class="rsvp-section scroll-reveal">
+    <!-- INTERACTIVE WELL WISHES WALL (EMOJIS • PHOTOS • GIFS) -->
+    <section class="wishes-wall-section scroll-reveal">
       <div class="section-badge">
-        <i class="fas fa-paper-plane"></i> RSVP &amp; Blessings
+        <i class="fas fa-envelope-heart"></i> Guestbook
       </div>
       
-      <div class="rsvp-card">
-        <div class="rsvp-header-center">
-          <h3 class="story-title">Kindly Confirm Your Presence</h3>
+      <div class="wish-input-card">
+        <div class="wish-header-center">
+          <h3 class="story-title">Well Wishes Wall</h3>
           <p style="font-size: 0.85rem; color: var(--text-muted);">
-            Send your confirmation and heartwarming blessings directly to the couple via WhatsApp
+            Share your warmest blessings, celebratory emojis, photos, or GIFs with Manu &amp; Maneesha!
           </p>
         </div>
 
-        <form id="rsvp-form">
+        <form id="post-wish-form">
           <div class="form-group">
-            <label for="rsvp-name" class="form-label">Your Full Name</label>
-            <input type="text" id="rsvp-name" class="form-input" placeholder="e.g. Ramesh & Family" required />
+            <label for="wish-name" class="form-label">Your Name</label>
+            <input type="text" id="wish-name" class="form-input" placeholder="e.g. Anand &amp; Kavya" required />
           </div>
 
           <div class="form-group">
-            <label class="form-label">Will you be joining us?</label>
-            <div class="radio-pills-row">
-              <label class="radio-pill-label">
-                <input type="radio" name="attending" value="Yes" checked />
-                <span><i class="fas fa-check-circle"></i> Attending</span>
-              </label>
-              <label class="radio-pill-label">
-                <input type="radio" name="attending" value="Regretfully No" />
-                <span><i class="fas fa-times-circle"></i> Cannot Attend</span>
-              </label>
+            <label for="wish-message" class="form-label">Your Blessings &amp; Wishes</label>
+            <textarea id="wish-message" class="form-textarea" rows="3" placeholder="Write your heartfelt message for the couple..."></textarea>
+          </div>
+
+          <!-- Quick Emoji Toolbar -->
+          <div class="form-group">
+            <span class="form-label" style="font-size: 0.76rem;">Tap to Add Emojis:</span>
+            <div class="emoji-toolbar">
+              <span class="emoji-pill" data-emoji="💍">💍</span>
+              <span class="emoji-pill" data-emoji="🌸">🌸</span>
+              <span class="emoji-pill" data-emoji="🥂">🥂</span>
+              <span class="emoji-pill" data-emoji="❤️">❤️</span>
+              <span class="emoji-pill" data-emoji="💐">💐</span>
+              <span class="emoji-pill" data-emoji="🕊️">🕊️</span>
+              <span class="emoji-pill" data-emoji="🎉">🎉</span>
+              <span class="emoji-pill" data-emoji="🧿">🧿</span>
+              <span class="emoji-pill" data-emoji="✨">✨</span>
+              <span class="emoji-pill" data-emoji="💙">💙</span>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="rsvp-guests" class="form-label">Number of Guests</label>
-            <select id="rsvp-guests" class="form-select">
-              <option value="1">1 Person</option>
-              <option value="2" selected>2 Persons</option>
-              <option value="3">3 Persons</option>
-              <option value="4">4 Persons</option>
-              <option value="5+">5+ (Family)</option>
-            </select>
+          <!-- Attachments Row (Photo & GIF Stickers) -->
+          <div class="attachment-bar">
+            <!-- Hidden File Input for Auto-Compressed Photo -->
+            <input type="file" id="wish-photo-input" accept="image/*" style="display: none;" />
+            <label for="wish-photo-input" class="attach-btn">
+              <i class="fas fa-camera"></i> Attach Photo
+            </label>
+
+            <!-- GIF Stickers Drawer Toggle -->
+            <button type="button" id="gif-toggle-btn" class="attach-btn">
+              <i class="fas fa-film"></i> Add GIF Sticker
+            </button>
           </div>
 
-          <div class="form-group">
-            <label for="rsvp-wishes" class="form-label">Your Blessings &amp; Message</label>
-            <textarea id="rsvp-wishes" class="form-textarea" rows="3" placeholder="Write your heartfelt wishes for Manu & Maneesha..."></textarea>
+          <!-- Attachment Preview Box -->
+          <div id="attachment-preview" class="attachment-preview-box">
+            <img id="preview-thumb-img" src="" alt="Attachment Preview" />
+            <button type="button" id="remove-photo-btn" class="remove-attachment-btn" title="Remove attachment">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
 
-          <button type="submit" class="btn-rsvp-submit">
-            <i class="fab fa-whatsapp"></i> Send RSVP via WhatsApp
+          <!-- Curated Celebratory Animated GIF Stickers -->
+          <div id="gif-sticker-drawer" class="gif-sticker-drawer">
+            <div class="gif-sticker-option" data-gif="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" title="Wedding Cheers">
+              <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" alt="Cheers" loading="lazy" />
+            </div>
+            <div class="gif-sticker-option" data-gif="https://media.giphy.com/media/xT0BKhunZXdH2ndCDu/giphy.gif" title="Sparkling Hearts">
+              <img src="https://media.giphy.com/media/xT0BKhunZXdH2ndCDu/giphy.gif" alt="Hearts" loading="lazy" />
+            </div>
+            <div class="gif-sticker-option" data-gif="https://media.giphy.com/media/l41lT4n6ylgW2hhjG/giphy.gif" title="Wedding Confetti">
+              <img src="https://media.giphy.com/media/l41lT4n6ylgW2hhjG/giphy.gif" alt="Confetti" loading="lazy" />
+            </div>
+            <div class="gif-sticker-option" data-gif="https://media.giphy.com/media/3o7TKoWXm3okO1kgHC/giphy.gif" title="Love Celebration">
+              <img src="https://media.giphy.com/media/3o7TKoWXm3okO1kgHC/giphy.gif" alt="Celebration" loading="lazy" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-post-wish">
+            <i class="fas fa-paper-plane"></i> Post Blessing to Wall
           </button>
         </form>
 
-        <!-- Blessings Wall Container -->
-        <div class="blessings-wall-container">
-          <h4 style="font-family: var(--font-royal); color: var(--gold-bright); font-size: 1.1rem; text-align: center;">
-            <i class="fas fa-quote-left"></i> Well Wishes Wall
-          </h4>
-          <div id="blessings-list" class="blessings-list">
-            <!-- Rendered dynamically -->
-          </div>
+        <!-- Wall Feed Cards List -->
+        <div id="blessings-wall-list" class="blessings-wall-grid">
+          <!-- Rendered dynamically -->
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- COMPLIMENTS & FOOTER SECTION -->
     <footer class="footer-section">
-      <div class="footer-hashtag" data-bind="couple-hashtag">#ManuWedsManeesha</div>
-      <p class="footer-warmth" data-bind="family-warmth">
-        Maxim &amp; Family cordially welcome your gracious presence.
-      </p>
-      <div class="gold-divider">
-        <i class="fas fa-infinity"></i>
+      
+      <!-- Invitation Letter Complimentary Close -->
+      <div class="compliments-box scroll-reveal">
+        <p class="compliments-await" data-bind="compliments-await">
+          We eagerly await celebrating our special day with you.
+        </p>
+        <p class="compliments-hima" data-bind="compliments-from">
+          WITH BEST COMPLIMENTS: HIMA
+        </p>
       </div>
+
+      <div class="footer-hashtag" data-bind="couple-hashtag">#ManuWedsManeesha</div>
+      
+      <div class="floral-divider">
+        <i class="fas fa-infinity" style="color:var(--blue-hydrangea);"></i>
+      </div>
+      
       <button id="open-editor-btn" class="edit-trigger-btn">
         <i class="fas fa-pen-to-square"></i> Edit Details Live
       </button>
@@ -390,7 +478,7 @@
   </div>
 
   <!-- ==========================================================================
-       IN-BROWSER LIVE EDIT MODAL (AS REQUESTED: EDITABLE DETAILS)
+       IN-BROWSER LIVE EDIT MODAL
        ========================================================================== -->
   <div id="editor-modal" class="modal-overlay">
     <div class="modal-container">
@@ -398,11 +486,11 @@
         <i class="fas fa-times"></i>
       </button>
 
-      <h3 style="font-family: var(--font-royal); color: var(--gold-bright); font-size: 1.3rem; margin-bottom: 6px;">
+      <h3 style="font-family: var(--font-serif); color: var(--navy-primary); font-size: 1.3rem; margin-bottom: 6px;">
         <i class="fas fa-sliders"></i> Edit Wedding Details
       </h3>
       <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 20px;">
-        Modify names, timings, venue or map link. Changes apply instantly!
+        Modify names, parents, venue names or map link. Changes apply instantly!
       </p>
 
       <form id="live-editor-form">
@@ -415,31 +503,31 @@
           <input type="text" id="edit-bride" class="form-input" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Wedding Date Display</label>
-          <input type="text" id="edit-date" class="form-input" required />
+          <label class="form-label">Groom's Parents</label>
+          <input type="text" id="edit-groom-parents" class="form-input" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Muhurtham Time Range</label>
-          <input type="text" id="edit-muhurtham" class="form-input" required />
+          <label class="form-label">Bride's Parents</label>
+          <input type="text" id="edit-bride-parents" class="form-input" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Venue Name</label>
-          <input type="text" id="edit-venue" class="form-input" required />
+          <label class="form-label">Wedding Venue (21-Nov)</label>
+          <input type="text" id="edit-wedding-venue" class="form-input" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Full Venue Address</label>
-          <textarea id="edit-address" class="form-textarea" rows="2" required></textarea>
+          <label class="form-label">Reception Venue (22-Nov)</label>
+          <input type="text" id="edit-reception-venue" class="form-input" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Google Maps Link</label>
-          <input type="text" id="edit-map-link" class="form-input" required />
+          <label class="form-label">Wedding Google Maps Link</label>
+          <input type="text" id="edit-wedding-map" class="form-input" required />
         </div>
 
         <div style="display: flex; gap: 10px; margin-top: 20px;">
-          <button type="submit" class="btn-luxury btn-gold-solid" style="flex: 2;">
+          <button type="submit" class="btn-luxury btn-navy-solid" style="flex: 2;">
             <i class="fas fa-check"></i> Apply Changes
           </button>
-          <button type="button" id="export-config-btn" class="btn-luxury btn-gold-outline" style="flex: 1;" title="Export wedding-config.js">
+          <button type="button" id="export-config-btn" class="btn-luxury btn-blue-outline" style="flex: 1;" title="Export wedding-config.js">
             <i class="fas fa-download"></i> Export
           </button>
         </div>
