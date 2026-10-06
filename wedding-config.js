@@ -117,18 +117,18 @@ const WEDDING_CONFIG = {
     gallery: [
       {
         src: "assets/images/couple-portrait.jpg",
-        caption: "Manu Maxim & Maneesha",
+        caption: "Manu Maxim & Maneesha — Walking Into Forever",
         tag: "Soulmates"
+      },
+      {
+        src: "assets/images/couple-close-portrait.jpg",
+        caption: "Smiles of Forever",
+        tag: "Portrait"
       },
       {
         src: "assets/images/ring-ceremony.jpg",
         caption: "The Sacred Promise — Ring Exchange",
         tag: "Ceremony"
-      },
-      {
-        src: "assets/images/couple-1.jpg",
-        caption: "Smiles of Forever",
-        tag: "Love"
       },
       {
         src: "assets/images/couple-2.jpg",
